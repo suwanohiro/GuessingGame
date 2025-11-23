@@ -29,6 +29,23 @@ export default class MainApplication {
             const encodeJSON = encodeURI(json);
             location.href = `./result.html?${encodeJSON}`;
         });
+
+        document.addEventListener("keydown", (event) => {
+            // スラッシュキーが押されたら
+            if (event.key !== "/") return;
+
+            const value = prompt("カウントを増やす数字を入力してください");
+            if (value === null) return;
+            const numValue = parseInt(value);
+            if (isNaN(numValue)) return;
+
+            // 1 - 100の範囲でなければ無視
+            if (numValue < 1 || numValue > 100) return;
+
+            // 対応する数字のカウントを増やす
+            const add = document.getElementsByClassName("add");
+            add[100 - numValue].click();
+        });
     }
     /**
      * リセットボタンを押した時の処理追加
