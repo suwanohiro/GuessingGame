@@ -1,0 +1,54 @@
+.background {
+    background-color: #1f1f1f
+}
+
+button {
+    border-radius: 1rem;
+    background-color: #0078d4;
+    color: #fff;
+    transition: transform .2s ease-in-out
+}
+
+button:active {
+    transform: scale(0.95)
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0
+}
+
+table {
+    width: 100%;
+    height: 100vh;
+    background-color: #add8e6
+}
+
+table tr td {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 7.5vh
+}
+
+table tr:nth-child(1) td {
+    height: 12.5vh;
+    vertical-align: bottom
+}
+
+table tr:nth-child(2) td {
+    font-size: 17.5vh
+}
+
+table tr:nth-child(3) td {
+    height: 25vh;
+    vertical-align: top
+}
+
+body {
+    user-select: none;
+}

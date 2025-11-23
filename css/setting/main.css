@@ -1,0 +1,69 @@
+.background {
+    background-color: #1f1f1f
+}
+
+button {
+    border-radius: 1rem;
+    background-color: #0078d4;
+    color: #fff;
+    transition: transform .2s ease-in-out
+}
+
+button:active {
+    transform: scale(0.95)
+}
+
+body {
+    user-select: none
+}
+
+#control {
+    width: 100%;
+    height: 7.5vh;
+    border-bottom: .125rem solid #404040;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    left: 0;
+    top: 0
+}
+
+#control button {
+    width: 15rem;
+    height: 5.625vh;
+    font-size: 3.75vh;
+    margin-top: .9375vh;
+    margin-left: 3rem
+}
+
+#main {
+    width: 100%;
+    margin-top: 8.5vh
+}
+
+#main span,
+#main button {
+    width: 9rem;
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold
+}
+
+#main div {
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem
+}
+
+#main div:hover {
+    background-color: #404040
+}
+
+.number {
+    border-right: .1rem solid #fff
+}
